@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form Validation</title>
+</head>
+
+<body>
+    <!-- action -the URL to send form data to 
+        method - the type of http request
+    if action or methosd not given then the page reloads on submit self GET-->
+
+    <h1>LOGIN</h1>
+    <h4>form Validation 1 - using "required" attr</h4>
+    <form action='' method="">
+        <label>USERNAME :
+            <input name="username" type="text" placeholder="username" required>
+        </label>
+        <label>PASSWORD :
+            <input name="pwd" type="password" placeholder="password" required>
+        </label>
+        <input type="submit">
+    </form>
+
+    <h4>form Validation 2- type validation (ex.email)</h4>
+    <form action='' method="">
+        <label for="usernameId">USERNAME :</label>
+        
+        <input id="usernameId" type="email" placeholder="username" required>
+        <label for="passwordId">PASSWORD :</label>
+        <input id="passwordId" type="password" placeholder="password" required>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>

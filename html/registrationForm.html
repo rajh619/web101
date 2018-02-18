@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <h3>Sign Up to create an account</h3>
+    <form>
+        <div>
+            <label for="first_name">First Name </label>
+            <input name="f_name" id="first_name" type="text" placeholder="John" required>
+            <label for="last_name">Last Name </label>
+            <input name="l_name" id="last_name" type="text" placeholder="smith" required>
+        </div>
+        <br>
+        <div>
+            <label for="gen_male">Male </label>
+            <input name="gender" id="gen_male" type="radio" value="male">
+            <label for="gen_female">Female </label>
+            <input name="gender" id="gen_female" type="radio" value="female">
+            <label for="gen_others">Others </label>
+            <input name="gender" id="gen_others" type="radio" value="others">
+        </div>
+        <br>
+        <div>
+            <label for="email">email </label>
+            <input name="email" id="email" type="email" required>
+            <label for="pwd">Password </label>
+            <input name="pwd" id="pwd" type="password" pattern=".{5,8}" required title="minimum 5 characters required for password max 8" minlength="4">
+        </div>
+        <br>
+        <div>
+            <label>Birthday
+             <!-- can also use select with option tag for dropdownlis of day mon yerar -->
+                    <input name="bDay" type="date">
+     
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>I agree to terms
+                <input name="terms" type="checkbox" value="true" required>
+            </label>
+        </div>
+        <br>
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

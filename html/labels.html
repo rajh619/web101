@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Labels</title>
+</head>
+
+<body>
+    <!-- action -the URL to send form data to 
+        method - the type of http request
+    if action or methosd not given then the page reloads on submit self GET-->
+
+    <h1>LOGIN</h1>
+    <h4>using labels</h4>
+    <form action='' method="">
+        <label>USERNAME :
+            <input type="text" placeholder="username">
+        </label>
+        <label>PASSWORD :
+            <input type="password" placeholder="password">
+        </label>
+        <input type="submit">
+    </form>
+
+    <h4>using labels method 2</h4>
+    <form action='' method="">
+        <label for="usernameId">USERNAME :</label>
+        
+        <input id="usernameId" type="text" placeholder="username">
+        <label for="passwordId">PASSWORD :</label>
+        <input id="passwordId" type="password" placeholder="password">
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>

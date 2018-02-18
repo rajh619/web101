@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- action -the URL to send form data to 
+        method - the type of http request
+    if action or methosd not given then the page reloads on submit self GET-->
+
+    <h1>LOGIN</h1>
+    <h4>post action</h4>
+    <form action='forms.html' method="post">
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+        <input type="submit">
+    </form>
+<br>
+<br>
+   <h4>get action (default)- with query name</h4>
+    <form action='' method="get">
+        <input name="username" type="text" placeholder="username">
+        <input name="password" type="password" placeholder="password">
+        <input type="submit">
+    </form>
+
+    <!-- <input type="datetime-local">  -->
+    <!-- <input type="color"> -->
+</body>
+
+</html>
